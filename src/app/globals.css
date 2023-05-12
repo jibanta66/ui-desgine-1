@@ -1,27 +1,96 @@
-@tailwind base;
-@tailwind components;
-@tailwind utilities;
-
-:root {
-  --foreground-rgb: 0, 0, 0;
-  --background-start-rgb: 214, 219, 220;
-  --background-end-rgb: 255, 255, 255;
-}
-
-@media (prefers-color-scheme: dark) {
-  :root {
-    --foreground-rgb: 255, 255, 255;
-    --background-start-rgb: 0, 0, 0;
-    --background-end-rgb: 0, 0, 0;
-  }
-}
-
 body {
-  color: rgb(var(--foreground-rgb));
-  background: linear-gradient(
-      to bottom,
-      transparent,
-      rgb(var(--background-end-rgb))
-    )
-    rgb(var(--background-start-rgb));
+  background: rgb(238,174,202);
+background: radial-gradient(circle, rgba(238,174,202,1) 0%, rgba(148,187,233,1) 50%); /* Replace with your desired background color */
+}
+
+.page-nav {
+  display: inline-flex;
+  justify-content: flex-start;
+  align-items: center;
+  margin-top: 20px;
+  background-color: rgba(221, 224, 223, 0.5);
+  padding: 10px;
+  border-radius: 10px;
+  position: absolute;
+  top: 10px;
+  left: 20px;
+  width: 300px;
+  height: 50px;
+}
+
+.page-nav a {
+  color: #333;
+  text-decoration: none;
+  padding: 10px 15px;
+  margin: 0 5px;
+  border-radius: 5px;
+  transition: background-color 0.3s ease-in-out;
+  position: relative;
+}
+
+.page-nav a:hover {
+  background-color: #333;
+  color: #fff;
+}
+.ads {
+  display: inline-flex;
+  padding: 20px;
+  margin: 0;
+  background-color: rgba(255, 255, 255, 0.5);
+  border: 1px solid #cccccc;
+  border-radius: 5px;
+  box-shadow: 0px 0px 5px #cccccc;
+  font-size: 16px;
+  line-height: 1.5;
+  color: #333333;
+  position: absolute;
+  top: 200px;
+  right: 20px;
+  width: 150px;
+  height: 300px;
+}
+
+.grid{
+  display: inline-flex;
+  padding: 20px;
+  margin: 0;
+  background-color: rgba(255, 255, 255, 0.5);
+  border: 1px solid #cccccc;
+  border-radius: 9px;
+  box-shadow: 0px 0px 5px #cccccc;
+  font-size: 16px;
+  line-height: 1.5;
+  color: #333333;
+  position: absolute;
+  top: 200px;
+  left: 140px;
+  width: 1050px;
+  height: 400px;
+}
+
+.text{
+  position: absolute;
+  top: 50px;
+  right: 10px;
+  width: 600px;
+  height: 400px;
+  
+}
+
+.grit-item1{
+  display: inline-flex;
+  padding: 20px;
+  margin: 0;
+  background-color: #f2e7e7;
+  border: 1px solid #cccccc;
+  border-radius: 5px;
+  box-shadow: 0px 0px 5px #cccccc;
+  font-size: 16px;
+  line-height: 1.5;
+  color: #333333;
+  position: absolute;
+  top: 20px;
+  left: 20px;
+  width: 320px;
+  height: 150px;
 }
