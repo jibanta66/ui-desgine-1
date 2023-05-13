@@ -1,6 +1,7 @@
+/* Desktop styles */
 body {
   background: rgb(238,174,202);
-background: radial-gradient(circle, rgba(238,174,202,1) 0%, rgba(148,187,233,1) 50%); /* Replace with your desired background color */
+  background: radial-gradient(circle, rgba(238,174,202,1) 0%, rgba(148,187,233,1) 50%);
 }
 
 .page-nav {
@@ -32,6 +33,7 @@ background: radial-gradient(circle, rgba(238,174,202,1) 0%, rgba(148,187,233,1) 
   background-color: #333;
   color: #fff;
 }
+
 .ads {
   display: inline-flex;
   padding: 20px;
@@ -50,7 +52,7 @@ background: radial-gradient(circle, rgba(238,174,202,1) 0%, rgba(148,187,233,1) 
   height: 300px;
 }
 
-.grid{
+.grid {
   display: inline-flex;
   padding: 20px;
   margin: 0;
@@ -68,16 +70,15 @@ background: radial-gradient(circle, rgba(238,174,202,1) 0%, rgba(148,187,233,1) 
   height: 400px;
 }
 
-.text{
+.text {
   position: absolute;
   top: 50px;
   right: 10px;
   width: 600px;
   height: 400px;
-  
 }
 
-.grit-item1{
+.grit-item1 {
   display: inline-flex;
   padding: 20px;
   margin: 0;
@@ -93,4 +94,16 @@ background: radial-gradient(circle, rgba(238,174,202,1) 0%, rgba(148,187,233,1) 
   left: 20px;
   width: 320px;
   height: 150px;
+}
+
+/* Mobile styles */
+@media only screen and (max-width: 600px) {
+  .page-nav {
+    width: 100%;
+    justify-content: center;
+    top: 0;
+    left: 0;
+  }
+
+ 
 }
